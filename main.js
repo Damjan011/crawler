@@ -5,7 +5,7 @@ if (isMainThread) {
   worker.once('message', (message) => {
     console.log(message);
   });
-  worker.postMessage('Main Thread.');
+  worker.postMessage('Main thread.');
 } else {
   parentPort.once('message', (message) => {
     console.log(message);
